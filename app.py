@@ -22,80 +22,8 @@ def ask_ai(prompt):
 
 st.set_page_config(page_title="Lyric Lantern", page_icon="🏮", layout="wide")
 
-st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Quicksand:wght@400;600&display=swap');
-
-.stApp {
-    background: radial-gradient(circle at 20% 10%, #5a2e1a 0%, #2b1510 45%, #130a08 100%);
-    color: #fbe9d0;
-    font-family: 'Quicksand', sans-serif;
-}
-#MainMenu, header, footer {visibility: hidden;}
-.block-container {max-width: 1400px; padding-top: 1.2rem;}
-
-.hero {text-align: center; padding: 1rem 0 0.5rem;}
-.lantern {
-    font-size: 4.5rem; display: inline-block;
-    transform-origin: top center;
-    animation: sway 4s ease-in-out infinite;
-    filter: drop-shadow(0 0 25px #ffb347);
-}
-@keyframes sway {
-    0%, 100% {transform: rotate(-6deg);}
-    50% {transform: rotate(6deg);}
-}
-.title {
-    font-family: 'Playfair Display', serif; font-weight: 900;
-    font-size: 4.5rem; letter-spacing: 0.18em; margin: 0;
-    color: #ffd89b;
-    animation: glow 3s ease-in-out infinite alternate;
-}
-@keyframes glow {
-    from {text-shadow: 0 0 12px #ff9d2e, 0 0 30px #ff7a00;}
-    to {text-shadow: 0 0 28px #ffc46b, 0 0 70px #ff8c1a;}
-}
-.tagline {font-style: italic; opacity: 0.85; letter-spacing: 0.08em;}
-
-.note {
-    position: fixed; bottom: -40px; font-size: 1.8rem; opacity: 0.35;
-    animation: floatup 14s linear infinite; pointer-events: none;
-}
-@keyframes floatup {
-    to {transform: translateY(-115vh) rotate(25deg); opacity: 0;}
-}
-
-.card {
-    background: rgba(255, 214, 153, 0.07);
-    border: 1px solid rgba(255, 179, 71, 0.3);
-    border-radius: 18px; padding: 1rem 1.4rem; margin-bottom: 0.8rem;
-}
-.glow {box-shadow: 0 0 35px rgba(255, 157, 46, 0.25);}
-.card h3 {color: #ffd89b; margin: 0 0 0.3rem 0;}
-.card p {margin: 0; opacity: 0.85;}
-
-.stTabs [data-baseweb="tab"] {color: #fbe9d0; font-size: 1.05rem;}
-.stTextArea label p {color: #ffd89b !important;}
-.stTextArea textarea {background: #2b1a14; color: #fbe9d0; border-radius: 12px;}
-.stButton > button {
-    background: #ff9d2e; color: #2b1510; border: none;
-    font-weight: 600; border-radius: 999px; padding: 0.5rem 1.6rem;
-}
-</style>
-
-<div class="note" style="left:8%; animation-delay:0s;">🎵</div>
-<div class="note" style="left:25%; animation-delay:4s;">🎶</div>
-<div class="note" style="left:45%; animation-delay:8s;">🎵</div>
-<div class="note" style="left:65%; animation-delay:2s;">🎶</div>
-<div class="note" style="left:82%; animation-delay:6s;">🎵</div>
-<div class="note" style="left:93%; animation-delay:10s;">🎶</div>
-
-<div class="hero">
-    <div class="lantern">🏮</div>
-    <h1 class="title">LYRIC LANTERN</h1>
-    <p class="tagline">You write the heart. AI helps with the craft.</p>
-</div>
-""", unsafe_allow_html=True)
+import lantern_style
+lantern_style.apply()
 
 
 def desk(name, hint, instruction, label):
@@ -118,7 +46,7 @@ def desk(name, hint, instruction, label):
 
 
 RULES = " Keep it short and clear. Never copy existing songs or imitate a living writer's lyrics."
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = st.tabs(["✍️ Co-Write", "🥁 Rhythm", "🎵 Rhyme", "🧹 Cliché", "🧱 Block Breaker", "🔄 Voice Switch", "🎤 Stage Mode", "📷 Photo Mood", "🎹 Chords", "🎙️ Hum", "🤝 Collab"])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = lantern_style.pages(["Co-Write", "Rhythm", "Rhyme", "Cliché", "Block Breaker", "Voice Switch", "Stage Mode", "Photo Mood", "Chords", "Hum", "Collab"])
 
 with tab1:
     desk("cowrite", "Write one line. I'll offer 3 ways to continue it.",
