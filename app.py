@@ -154,7 +154,7 @@ function boot() {
   }
   var btn = document.createElement('button');
   btn.id = 'lantern-music-btn';
-  btn.textContent = '🔈 Music off';
+  btn.textContent = '🔇';
   btn.style.cssText = 'position:fixed;top:14px;right:18px;z-index:99999;background:#ff9d2e;color:#2b1510;border:none;border-radius:999px;padding:8px 16px;font-weight:600;cursor:pointer;box-shadow:0 0 18px rgba(255,157,46,0.5);';
   btn.onclick = function (e) {
     e.stopPropagation();
@@ -164,11 +164,11 @@ function boot() {
       master.gain.setTargetAtTime(0.9, ctx.currentTime, 0.2);
       chord();
       timer = setInterval(chord, 6000);
-      btn.textContent = '🔊 Music on';
+      btn.textContent = '🔊';
     } else {
       clearInterval(timer);
       master.gain.setTargetAtTime(0.0001, ctx.currentTime, 0.5);
-      btn.textContent = '🔈 Music off';
+      btn.textContent = '🔇';
     }
     sparkle();
   };

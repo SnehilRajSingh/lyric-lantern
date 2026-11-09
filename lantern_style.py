@@ -212,12 +212,16 @@ CSS = """
 #lantern-audio-box {
   top: auto !important; right: auto !important; left: 18px !important; bottom: 18px !important;
   background: #fff6df !important; border: 2px solid #3b2a20 !important;
-  border-radius: 5px 10px 6px 11px !important; box-shadow: 3px 3px 0 #2f1f15 !important;
+  border-radius: 14px !important; box-shadow: none !important;
 }
 #lantern-music-btn {
-  background: #d9a441 !important; color: #3b2a20 !important; border: 2px solid #3b2a20 !important;
-  border-radius: 4px 8px 5px 9px !important; font-family: 'Cormorant Garamond', serif !important;
-  font-weight: 700 !important; font-size: 1.05rem !important;
+  background: #d9a441 !important; color: #3b2a20 !important;
+  border: 1px solid rgba(59,42,32,0.25) !important;
+  border-radius: 50% !important;
+  width: 44px !important; height: 44px !important;
+  padding: 0 !important; line-height: 1 !important;
+  font-size: 1.3rem !important; box-shadow: none !important;
+  display: flex !important; align-items: center !important; justify-content: center !important;
 }
 
 @media (max-width: 900px) {
@@ -306,6 +310,25 @@ html {font-size: 17px !important;}
 .stApp .paper {font-size: 1.3rem !important; line-height: 1.35 !important; padding: 0.6rem 1.1rem !important;}
 
 #lantern-music-btn {font-size: 0.95rem !important; padding: 5px 12px !important;}
+.stApp .stButton > button,
+.stApp .stDownloadButton > button,
+.stApp .st-key-tbhandle .stButton > button {
+  border: 1px solid rgba(59,42,32,0.25) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.stApp .stButton > button:hover,
+.stApp .stDownloadButton > button:hover,
+.stApp .st-key-tbhandle .stButton > button:hover {
+  box-shadow: none !important;
+  transform: none !important;
+  background: #e3b255 !important;
+}
+.stApp .stButton > button:active {
+  box-shadow: none !important;
+  transform: scale(0.98) !important;
+}
 """
 
 HERO = """
