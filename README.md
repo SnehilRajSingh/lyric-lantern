@@ -1,4 +1,4 @@
-• Lyric Lantern
+## • LYRIC LANTERN
 
 **An AI songwriting companion that helps you write, polish, and perform your own lyrics, without writing the song for you.**
 
@@ -10,11 +10,11 @@ Built for **GeNarrative Clash 2026** (Phase 2: 50% MVP submission).
 
 ---
 
-• The Problem
+## • The Problem
 
 Most AI lyric tools generate a whole song and take the creative work away from the writer. Songwriters actually get stuck on small things: a line that won't flow, a clichéd phrase, a word that won't rhyme, or a blank page. Lyric Lantern is a **co-writer, not a ghostwriter**. It nudges, critiques, and sparks ideas, while the song stays yours.
 
-• Features (what's built in this MVP)
+## • Features (what's built in this MVP)
 
 | ◉ | Feature | What it does |
 |---|---------|--------------|
@@ -32,20 +32,20 @@ Most AI lyric tools generate a whole song and take the creative work away from t
 
 Extras: a warm lantern-themed UI, ambient pad music toggle (Web Audio API), and sparkle sounds on button clicks.
 
-• Responsible-AI choices
+## • Responsible-AI choices
 
 - Every prompt tells the model **never to copy existing songs or imitate a living writer's lyrics**.
 - Features are designed to **assist, not replace** the writer (e.g. Block Breaker explicitly does not write the verse).
 - User text is HTML-escaped before being rendered back on the page.
 
-• Tech Stack
+## • Tech Stack
 
 - **Frontend / App:** [Streamlit](https://streamlit.io) with custom CSS
 - **AI:** Google Gemini (`gemini-3.5-flash-lite`) via the `google-genai` SDK (text and image input)
 - **Audio / music:** NumPy (pitch detection), hand-built MIDI writer, Web Audio API (ambient sound)
 - **Config:** `python-dotenv`
 
-• Project Structure
+## • Project Structure
 
 ```
 lyric-lantern/
@@ -57,7 +57,7 @@ lyric-lantern/
 └── .streamlit/config.toml
 ```
 
-•  Run Locally
+## •  Run Locally
 
 **Requirements:** Python 3.10+ and a free [Gemini API key](https://aistudio.google.com/apikey).
 
@@ -80,13 +80,13 @@ Then open http://localhost:8501.
 
 
 
-## ☁️ Deploy (Streamlit Community Cloud)
+## • Deploy (Streamlit Community Cloud)
 
 1. Push the repo to GitHub (public).
 2. Go to [share.streamlit.io](https://share.streamlit.io), click **New app**, and select the repo with `app.py` as the entry file.
 3. Under **Advanced settings → Secrets**, add: `GEMINI_API_KEY = "your_key"`.
 
-∆ Known Limitations (MVP)
+## ∆ Known Limitations (MVP)
 
 - **Collab** rooms live in server memory, so they reset on restart and work on a single instance only.
 - **Hum to Melody** is a rough monophonic pitch tracker. Best in a quiet room, one note at a time.
@@ -96,7 +96,7 @@ Then open http://localhost:8501.
 
 Planned for the 6-hour live building sprint at the TIU Campus finale. Each one follows the same pattern as the existing tabs: a short prompt, the Gemini call, and a rendered result.
 
-| ◉ | Planned feature | Idea |
+## | ◉ | Planned feature | Idea |
 |---|-----------------|------|
 | 1 | **Memory-to-Song** | Describe a personal memory and get a song concept: title, mood, imagery, and a first-verse direction drawn from your own details |
 | 2 | **Genre Blender** | Pick two genres (for example Baul folk and Lo-fi) and get a blended style guide covering rhythm, instruments, lyric tone, and chord ideas |
@@ -106,7 +106,7 @@ Planned for the 6-hour live building sprint at the TIU Campus finale. Each one f
 
 Beyond the finale, we would also like persistent saved songs, real multi-user collaboration with accounts, and PDF export of lyrics with chords.
 
-• Team Algo-rythm
+## • Team Algo-rythm
 
 | Name | Contribution |
 |------|--------------|
@@ -115,6 +115,6 @@ Beyond the finale, we would also like persistent saved songs, real multi-user co
 | **Snehil Raj Singh** | UI description and design direction, demo video voice-over |
 | **Shivam Jain** | Feature suggestions, screen recording of the demo |
 
-∆ License
+## ∆ License
 
 MIT: see `LICENSE` (add one before submitting).
