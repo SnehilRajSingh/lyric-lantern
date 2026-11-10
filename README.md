@@ -62,7 +62,7 @@ lyric-lantern/
 **Requirements:** Python 3.10+ and a free [Gemini API key](https://aistudio.google.com/apikey).
 
 ```bash
-git clone https://github.com/<user-samadrita>/lyric-lantern.git
+git clone https://github.com/<your_username>/lyric-lantern.git
 cd lyric-lantern
 
 python -m venv venv
