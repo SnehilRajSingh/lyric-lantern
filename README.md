@@ -6,7 +6,7 @@ Built for **GeNarrative Clash 2026** (Phase 2: 50% MVP submission).
 
 - **Demo video:** `<PASTE YOUR VIDEO URL HERE>`
 - **Team:** **Algo-rythm**: Adrija Adhikary, Samadrita Ghosh, Snehil Raj Singh, Shivam Jain
-- **Live app :** `<https://lyric-lantern-app.streamlit.app/>`
+- **Live app :** ` https://lyric-lantern-app.streamlit.app/ `
 
 ---
 
