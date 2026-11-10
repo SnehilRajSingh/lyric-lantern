@@ -16,7 +16,7 @@ Most AI lyric tools generate a whole song and take the creative work away from t
 
 ## • Features (what's built in this MVP)
 
-| ◉ | Feature | What it does |
+| ◉ | FEATURE | What it does |
 |---|---------|--------------|
 | 1 | **Co-Write** | Give one line, get 3 directions to continue (emotional, imagery, twist) |
 | 2 | **Rhythm** | Syllable count per line, flags where the flow breaks, suggests small fixes |
@@ -92,19 +92,19 @@ Then open http://localhost:8501.
 - **Hum to Melody** is a rough monophonic pitch tracker. Best in a quiet room, one note at a time.
 - AI replies depend on Gemini API availability and free-tier rate limits.
 
-• Roadmap: Finale Build (remaining 50%)
+## • Roadmap: Finale Build (remaining 50%)
 
 Planned for the 6-hour live building sprint at the TIU Campus finale. Each one follows the same pattern as the existing tabs: a short prompt, the Gemini call, and a rendered result.
 
-## | ◉ | Planned feature | Idea |
+| ◉ | PLANNED FEATURE | Idea |
 |---|-----------------|------|
 | 1 | **Memory-to-Song** | Describe a personal memory and get a song concept: title, mood, imagery, and a first-verse direction drawn from your own details |
 | 2 | **Genre Blender** | Pick two genres (for example Baul folk and Lo-fi) and get a blended style guide covering rhythm, instruments, lyric tone, and chord ideas |
 | 3 | **Bengali, Hindi and Hinglish support** | Run the writing tools (rhyme, rhythm, clichés, co-write) on lyrics in Bengali, Hindi, or mixed Hinglish, not just English |
 | 4 | **Emotion Arc Map** | Paste a song and see how its emotion changes verse by verse, shown as a chart, with notes on where the arc flattens |
-| 5 | **Hook Vault** *(bonus, if time allows)* | Save catchy lines and hook ideas in one place so they can be reused later |
+| 5 | **Hook Vault** | Save catchy lines and hook ideas in one place so they can be reused later |
 
-Beyond the finale, we would also like persistent saved songs, real multi-user collaboration with accounts, and PDF export of lyrics with chords.
+*Beyond the finale, we would also like persistent saved songs, real multi-user collaboration with accounts, and PDF export of lyrics with chords.*
 
 ## • Team Algo-rythm
 
@@ -115,6 +115,4 @@ Beyond the finale, we would also like persistent saved songs, real multi-user co
 | **Snehil Raj Singh** | UI description and design direction, demo video voice-over |
 | **Shivam Jain** | Feature suggestions, screen recording of the demo |
 
-## ∆ License
 
-MIT: see `LICENSE` (add one before submitting).
